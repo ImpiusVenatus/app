@@ -1,0 +1,72 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+
+  --vt-c-black: #181818;
+
+  --vt-c-green-light: #00ff72;
+  --vt-c-green-dark: #0caf60;
+
+  --vt-c-divider-light: #313131;
+  --vt-c-divider-dark: #32393d;
+
+  --vt-c-text-light-1: var(--vt-c-black);
+  --vt-c-text-light-2: var(--vt-c-green-dark);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: var(--vt-c-green-light);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+
+  --color-border: var(--vt-c-divider-light);
+  --color-border-dark: var(--vt-c-divider-dark);
+
+  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--vt-c-text-light-2);
+
+  --gap-section: 1.2rem;
+  --padding-size: 1.5rem;
+  --radius-size: 10px;
+
+  --btn-background-disabled: var(--vt-c-green-dark);
+
+  --btn-radius-size: 2rem;
+  --btn-padding-size: 1.2rem 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+
+    --color-border: var(--vt-c-divider-dark);
+
+    --color-text: var(--vt-c-text-dark-1);
+    --color-heading: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+
+  font-family: 'Mona Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+}

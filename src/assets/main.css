@@ -1,0 +1,113 @@
+@import './base.css';
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+
+.lifestory_card {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(2, 0, 36, 0.05) 100%
+  );
+  padding: var(--padding-size);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-size);
+}
+.nft_card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-size);
+  padding: 0.8rem;
+  margin-right: var(--gap-section);
+  margin-bottom: var(--gap-section);
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(2, 0, 36, 0.05) 100%
+  );
+}
+.btn {
+  background: #11ae5f;
+  border: none;
+  padding: var(--btn-padding-size);
+  border-radius: var(--btn-radius-size);
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(2, 0, 36, 0.05) 100%
+  );
+  border: 1px solid var(--color-border);
+  border-radius: var(--btn-radius-size);
+}
+.btn_disabled {
+  background: var(--btn-background-disabled);
+  border: none;
+  padding: var(--btn-padding-size);
+  border-radius: var(--btn-radius-size);
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+  color: #ffffffd0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+.btn_disabled:hover {
+  cursor: not-allowed;
+}
+.btn-grey {
+  background: var(--color-border);
+  border: none;
+  padding: var(--btn-padding-size);
+  width: 100%;
+  color: var(--vt-c-text-dark-1);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+.btn-grey:hover {
+  cursor: pointer;
+  background: #222528;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #2f343b;
+}
+.page_title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  padding-right: 1.2rem;
+}
+
+/*Global Scrollbar CSS*/
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--vt-c-divider-dark);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--vt-c-green-light);
+  border-radius: 100vw;
+}
